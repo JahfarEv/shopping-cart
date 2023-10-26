@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/JahfarEv.github.io/shopping-cart/static/css/main.c6d4a20f.css",
+    "main.js": "/JahfarEv.github.io/shopping-cart/static/js/main.0f4568d3.js",
+    "static/js/787.28cb0dcd.chunk.js": "/JahfarEv.github.io/shopping-cart/static/js/787.28cb0dcd.chunk.js",
+    "static/media/p9.png": "/JahfarEv.github.io/shopping-cart/static/media/p9.810f63f729c19272c329.png",
+    "static/media/p7.png": "/JahfarEv.github.io/shopping-cart/static/media/p7.7be98468259d892d4dba.png",
+    "static/media/p2.png": "/JahfarEv.github.io/shopping-cart/static/media/p2.32565a8a89ebc2091160.png",
+    "static/media/p6.png": "/JahfarEv.github.io/shopping-cart/static/media/p6.5cb8f9ff72d2db18eeb4.png",
+    "static/media/p4.png": "/JahfarEv.github.io/shopping-cart/static/media/p4.090d52413f16c07d79a8.png",
+    "static/media/p8.png": "/JahfarEv.github.io/shopping-cart/static/media/p8.7ccf6288df9e0c7bcc8d.png",
+    "static/media/p13.png": "/JahfarEv.github.io/shopping-cart/static/media/p13.351c3984860ae3af261b.png",
+    "static/media/p10.png": "/JahfarEv.github.io/shopping-cart/static/media/p10.a817151befb3df5ef81d.png",
+    "static/media/p12.png": "/JahfarEv.github.io/shopping-cart/static/media/p12.8e48f2e9c71b28ec552c.png",
+    "static/media/home.webp": "/JahfarEv.github.io/shopping-cart/static/media/home.f5dcdbf6c4e0a5cbc1db.webp",
+    "static/media/p1.png": "/JahfarEv.github.io/shopping-cart/static/media/p1.da89ae454743a6b2b54c.png",
+    "static/media/p11.png": "/JahfarEv.github.io/shopping-cart/static/media/p11.6f931fb40dadc8c16e17.png",
+    "static/media/cat27.jpg": "/JahfarEv.github.io/shopping-cart/static/media/cat27.8a15e8adf968398a7347.jpg",
+    "index.html": "/JahfarEv.github.io/shopping-cart/index.html",
+    "main.c6d4a20f.css.map": "/JahfarEv.github.io/shopping-cart/static/css/main.c6d4a20f.css.map",
+    "main.0f4568d3.js.map": "/JahfarEv.github.io/shopping-cart/static/js/main.0f4568d3.js.map",
+    "787.28cb0dcd.chunk.js.map": "/JahfarEv.github.io/shopping-cart/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6d4a20f.css",
+    "static/js/main.0f4568d3.js"
+  ]
+}
