@@ -10,10 +10,15 @@ import Home from "./components/Home";
 import Cards from "./components/Category/Cards";
 import ViewProduct from "./components/Category/ViewProduct";
 import { Items } from "./components/Items";
+import Cart from "./components/Category/Cart";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export const shopContext= createContext();
 
+
+
 function App() {
-  // const[show, setShow]= useState(true)
+  const[cart, setCart]= useState([])
  const [product]=useState(Items);
   const[user,setUser]= useState([]);
   const[login,setLogin]= useState(false)
@@ -21,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-    <shopContext.Provider value={{user, setUser,setLogin,login,product}}>
+    <shopContext.Provider value={{user, setUser,setLogin,login,product,cart,setCart}}>
       <BrowserRouter>
         <Nav />
         <Routes>
@@ -31,10 +36,13 @@ function App() {
           <Route path="/all" element={<All />} />
           <Route path="/dog" element={<Dog />} />
           <Route path="/cat" element={<Cat />} />
+          <Route path="/cart" element={<Cart />}/>
           <Route path="/view/:id" element={<ViewProduct />}/>
         </Routes>
       </BrowserRouter>
       </shopContext.Provider>
+      <ToastContainer/>
+      
     </div>
   );
 }

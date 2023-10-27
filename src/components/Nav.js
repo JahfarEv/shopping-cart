@@ -37,10 +37,10 @@ function NavScroll({size}) {
               placeholder="Search"
               className="me-2"
               aria-label="Search"/>
-            <Button className="text-white" variant="outline-success">Search</Button>
-<Dropdown.Toggle variant="success">
+            <Button className="text-white" variant="outline-success mx-3">Search</Button>
+<Dropdown.Toggle onClick={()=>navigate('/cart')} variant="success">
 <FaShoppingCart color='white' fontSize="25px"/>
-<Badge>{size}</Badge>
+<Badge>{}</Badge>
 </Dropdown.Toggle>
 <Dropdown.Menu style={{minWidth:370}}>
 <span style={{padding: 10}}>Cart is Empty!</span>

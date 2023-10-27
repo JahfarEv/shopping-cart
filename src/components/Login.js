@@ -5,6 +5,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/esm/Container';
 import { shopContext } from '../App';
 import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
+
 
 const Login = () => {
     const {user,setLogin}=useContext(shopContext)
@@ -18,12 +20,13 @@ const Login = () => {
       const findPass=user.find((usr)=>usr.newPass===newLoginPass)
       if(findName && findPass){
         setLogin(true)
-         alert('login success')
+        toast.success('login success')
         navigate('/')
         
       }
       else{
-        alert ('pls login')
+        toast.error('Pls Sign up !')
+        navigate('/signup')
       }
     }
   return (
@@ -49,6 +52,9 @@ const Login = () => {
   </Form.Group>
   <Button variant="primary" type="submit" onClick={handleClick}>
     Submit
+  </Button>
+  <Button onClick={()=>navigate('/signup')} variant="primary" type="submit" style={{background:'none',color:'blue',border:'none'}}>
+   Create account
   </Button>
 </Form>
 </Container>
