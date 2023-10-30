@@ -6,6 +6,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/esm/Container";
 import { useNavigate } from "react-router-dom";
 import { shopContext } from "../../App";
+import Nav from '../Nav'
+import img1 from '../slider/banner.webp'
 
 const Dog = () => {
   const {product}=useContext(shopContext)
@@ -13,6 +15,8 @@ const Dog = () => {
   const pet = product.filter((dg) => dg.category === "Dog");
   return (
     <div>
+    <Nav/>
+    <img src={img1} style={{ width: "100%" }} />
       <Container>
         <div className="row justify-content-center">
           {pet.map((item) => (

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { shopContext } from '../../App'
+import Nav from '../Nav'
 
 const Cart = () => {
   const{cart,setCart}=useContext(shopContext)
@@ -31,6 +32,8 @@ const Cart = () => {
   const totalAmount = cart.reduce((total,item)=>total+ item.price *item.quandity,0)
 
   return (
+    <div>
+    <Nav/>
     <div className='continer'>
     <h1 className='mt-4'>Your Cart</h1>
     <ul className='list-group'>
@@ -54,6 +57,7 @@ const Cart = () => {
       ))}
     </ul>
       <p className='mt-3' style={{fontSize:'25px', fontWeight:600}}>Total Amount:{totalAmount}</p>
+    </div>
     </div>
   )
 }

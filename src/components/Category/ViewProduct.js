@@ -34,16 +34,26 @@ const ViewProduct = () => {
   return (
     <div>
         <Container>
-   <div className='row justify-content-center'>
+   {/* <div className='row justify-content-center'> */}
 
 {products.map(item=>(
-    <Card key={item.id} style={{ width: '18rem',height:'auto' }}
+  <div className='d-flex'>
+  <Card key={item.id} style={{ width: '18rem',height:'auto' }}
     className={`'bg-light-black text-light':'bg-light text-black'} text-center p-0 overflow-hidden shadow mx-auto mb-4`}>
 
       <Card.Img variant="top" src={item.productImage} style={{height:'300px'}}/>
+      
+    </Card>
+
+
+
+    <Card key={item.id} style={{ width: '40rem',height:'auto' }}
+    className={`'bg-light-black text-light':'bg-light text-black'} text-center p-0 overflow-hidden shadow mx-auto mb-4`}>
+
+      
       <Card.Body>
         <Card.Title style={{textOverflow: 'ellipsis', overflow:'hidden', whiteSpace:'nowrap'}}>{item.productName}</Card.Title>
-        
+        <Card.Title style={{textOverflow: 'ellipsis', overflow:'hidden', whiteSpace:'nowrap'}}>{item.description}</Card.Title>
         <Card.Title>
           Rs.<span className='h3'>{item.price}</span>
         </Card.Title>
@@ -52,8 +62,9 @@ const ViewProduct = () => {
         Add to cart</Button>
       </Card.Body>
     </Card>
+    </div>
     ))
-}</div>
+}
     </Container>
     </div>
   )

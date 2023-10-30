@@ -25,17 +25,18 @@ const Login = () => {
         
       }
       else{
-        toast.error('Pls Sign up !')
-        navigate('/signup')
+        toast.error('Pls fill  !')
+        navigate('/signin')
       }
     }
   return (
     <div>
-       <Container style={{width:'500px',marginTop:'80px'}}>
+       <Container style={{width:'50%',marginTop:'80px'}}>
+       <h1>Login</h1>
 
 <Form >
 
-  <Form.Group className="mb-3" controlId="formBasicEmail">
+  <Form.Group className="mb-3" controlId="formBasicEmail" style={{marginBottom:"20px"}}>
     <Form.Label>User name</Form.Label>
     <Form.Control type="text" placeholder="Enter user name" ref={loginName} />
     <Form.Text className="text-muted">
@@ -43,7 +44,7 @@ const Login = () => {
     </Form.Text>
   </Form.Group>
 
-  <Form.Group className="mb-3" controlId="formBasicPassword">
+  <Form.Group className="mb-3" controlId="formBasicPassword" style={{marginBottom:"20px"}}>
     <Form.Label>Password</Form.Label>
     <Form.Control type="password" placeholder="Password" ref={loginPass} />
   </Form.Group>

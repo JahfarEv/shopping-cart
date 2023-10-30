@@ -7,8 +7,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { useNavigate } from "react-router-dom";
 import { Dropdown } from "react-bootstrap";
 import {Badge} from "react-bootstrap"
-import {FaShoppingCart  } from 'react-icons/fa'
-import Home from "./Home";
+import {FaShoppingCart} from 'react-icons/fa'
+import {FiLogIn} from 'react-icons/fi'
+
 
 function NavScroll({size}) {
   const navigate=useNavigate()
@@ -37,16 +38,16 @@ function NavScroll({size}) {
               placeholder="Search"
               className="me-2"
               aria-label="Search"/>
-            <Button className="text-white" variant="outline-success mx-3">Search</Button>
-<Dropdown.Toggle onClick={()=>navigate('/cart')} variant="success">
+            <Button className="text-white" variant="outline-primary mx-3">Search</Button>
+<Dropdown.Toggle onClick={()=>navigate('/cart')}>
 <FaShoppingCart color='white' fontSize="25px"/>
 <Badge>{}</Badge>
 </Dropdown.Toggle>
 <Dropdown.Menu style={{minWidth:370}}>
 <span style={{padding: 10}}>Cart is Empty!</span>
 </Dropdown.Menu>
-            <Button style={{width:'150px',height:'50px'}} onClick={()=>navigate('/signin')} className="mx-3"  >Sign In</Button>
-            <Button style={{width:'150px',height:'50px'}} onClick={()=>navigate('/signup')}>Sign up</Button>
+            <Dropdown.Toggle onClick={()=>navigate('/signin')} className="mx-3"  ><FiLogIn/></Dropdown.Toggle>
+            
           </Form>
         </Navbar.Collapse>
       </Container>
