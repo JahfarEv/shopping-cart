@@ -19,7 +19,9 @@ import AdminLogin from "./components/AdminPannel/AdminLogin";
 import ProductList from "./components/AdminPannel/ProductList";
 import Users from "./components/AdminPannel/Users";
 import Sidebar from "./components/Sidebar";
+
 import '../src/App.css'
+
 export const shopContext= createContext();
 
 
@@ -43,6 +45,7 @@ function App() {
           <Route path="/all" element={<All />} />
           <Route path="/dog" element={<Dog />} />
           <Route path="/cat" element={<Cat />} />
+          
           <Route path="/cart" element={<Cart />}/>
           <Route path="/view/:id" element={<ViewProduct />}/>
           <Route path="/sidebar" element ={<Sidebar/>}/>

@@ -30,8 +30,8 @@ const Login = () => {
       }
     }
   return (
-    <div>
-       <Container style={{width:'50%',marginTop:'80px'}}>
+    <div >
+       <Container style={{width:'50%',marginTop:'80px'}} >
        <h1>Login</h1>
 
 <Form >

@@ -27,19 +27,21 @@ const Home = () => {
 <Nav/>
     <Container fluid >
       
-     <img src={img1} style={{ width: "100%" }} />
+     <img src={img1} style={{ width: "100%" }} onClick={()=>navigate('/all')}/>
      
    
      
         <div className="d-flex">
       
         <Card onClick={()=>navigate('/cat')} style={{ width: '50%',marginRight:'10px'}}>
+        <h1 style={{textAlign:'center',backgroundColor:'#AA1616', color:'#F3DA99',fontWeight:'bold'}}>Cat Special Items</h1>
       <Card.Img variant="top" src={img2}  style={{height:'auto'}}/>
-      <h1 >Cat</h1>
+      
       </Card>
       <Card onClick={()=>navigate('/dog')} style={{ width: '50%' }}>
+      <h1 style={{textAlign:'center',backgroundColor:'#AA1616', color:'#F3DA99',fontWeight:'bold'}}>Dog Special Items</h1>
       <Card.Img variant="top" src={img3} style={{height:'auto'}} />
-      <h1>Dog</h1>
+     
       </Card>
         
         </div>
