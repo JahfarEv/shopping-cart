@@ -6,6 +6,7 @@ import Container from 'react-bootstrap/esm/Container';
 import { shopContext } from '../App';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import Brand from '../components/Category/img/Color logo - no background.png'
 
 
 const Login = () => {
@@ -13,6 +14,7 @@ const Login = () => {
     const navigate=useNavigate()
     const loginName=useRef()
     const loginPass=useRef()
+   
     const handleClick=()=>{
       const newLoginName=loginName.current.value
       const newLoginPass=loginPass.current.value
@@ -31,10 +33,13 @@ const Login = () => {
     }
   return (
     <div >
-       <Container style={{width:'50%',marginTop:'80px'}} >
-       <h1>Login</h1>
-
-<Form >
+       <Container >
+       <h1 className='d-flex align-items-center justify-content-center font-weight-bold'><img src={Brand} style={{width:'200px'}}/></h1>
+       <div className='d-flex align-items-center justify-content-center'>
+      
+       <span class="border border-gray ">
+<Form className='align-items-center mt-5 p-3' >
+<h3>Log in</h3>
 
   <Form.Group className="mb-3" controlId="formBasicEmail" style={{marginBottom:"20px"}}>
     <Form.Label>User name</Form.Label>
@@ -58,6 +63,8 @@ const Login = () => {
    Create account
   </Button>
 </Form>
+</span>
+</div>
 </Container>
     </div>
   )

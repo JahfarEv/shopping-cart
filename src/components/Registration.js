@@ -13,6 +13,7 @@ function Registration() {
   const { user, setUser } = useContext(shopContext);
   const nName = useRef();
   const nPass = useRef();
+  const nEmail= useRef();
   const [focus, setFocus] = useState({
     errName: false,
     errEmail: false,
@@ -25,7 +26,8 @@ function Registration() {
   const handleClick = () => {
     const name = nName.current.value;
     const pass = nPass.current.value;
-    const value = { newName: name, newPass: pass };
+    const email = nEmail.current.value;
+    const value = { newName: name, newPass: pass, newEmail:email };
     setUser([...user, value]);
     console.log(value);
     if (!name || !pass) {
@@ -39,7 +41,9 @@ function Registration() {
     <Container
       style={{ marginTop: "80px", alignItems: "center", width: "50%" }}
     >
-      <form>
+     <div className='d-flex align-items-center justify-content-center'>
+     <span class="border border-gray ">
+      <form className='align-items-center mt-5 p-3'>
         <h2>Sign Up</h2>
         <div class="form-group" style={{ marginBottom: "20px" }}>
           <label for="exampleInputEmail1">Username</label>
@@ -65,6 +69,7 @@ function Registration() {
             id="exampleInputEmail1"
             aria-describedby="emailHelp"
             placeholder="Enter email"
+            ref={nEmail}
             onBlur={() => setFocus({ ...focus, errEmail: true })}
             focus={focus.errEmail.toString()}
             required
@@ -91,6 +96,8 @@ function Registration() {
           Submit
         </button>
       </form>
+      </span>
+      </div>
     </Container>
   );
 }

@@ -13,6 +13,7 @@ import {RiAdminFill} from 'react-icons/ri'
 import { useState } from "react";
 import { hover } from "@testing-library/user-event/dist/hover";
 import '../components/Nav.css'
+import brand from './Category/img/Color logo - no background.png'
 
 
 function NavScroll({size}) {
@@ -21,10 +22,7 @@ function NavScroll({size}) {
   return (
     <Navbar expand="lg" className="bg-dark hvr">
       <Container fluid>
-        <Navbar.Brand  className=" a" onClick={()=>navigate('/')} style={{color:'#F3DA99'}}
-        
-        
-        >PET FOODS</Navbar.Brand>
+        <Navbar.Brand  className="a" onClick={()=>navigate('/')} style={{color:'#F3DA99'}} ><img src={brand} width='100px' height='30px'/></Navbar.Brand>
         <Navbar.Toggle className="bg-white" aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

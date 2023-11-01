@@ -3,7 +3,7 @@ import { shopContext } from '../../App'
 import Nav from '../Nav'
 
 const Cart = () => {
-  const{cart,setCart}=useContext(shopContext)
+  const{cart,setCart,buy,setBuy}=useContext(shopContext)
   const cartIncrement=(item)=>{
     const updateCart = cart.map((cartItem)=>{
       if(cartItem.id === item.id){
@@ -31,6 +31,13 @@ const Cart = () => {
 
   const totalAmount = cart.reduce((total,item)=>total+ item.price *item.quandity,0)
 
+  const buyItem=(id)=>{
+    const byItem=cart.find((item)=>item.id==id)
+    const remove=cart.filter((item)=>item.id!==id)
+    setBuy([...buy,byItem])
+    setCart(remove)
+  }
+
   return (
     <div>
     <Nav/>
@@ -47,6 +54,7 @@ const Cart = () => {
             <button onClick={()=>cartIncrement(item)} type='button' className='btn btn-outline-secondary'>+</button>
             <button onClick={()=>cartRemove(item)} type='button' className='btn btn-outline-danger'>Remove</button>
           </div>
+          <button onClick={()=>buyItem(item.id)} type='button' className='btn btn-outline-secondary'>Buy now</button>
         </div>
         <div>
         <img src={item.productImage} alt={item.productName} style={{width:'100px'}}/>

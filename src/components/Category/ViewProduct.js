@@ -5,6 +5,9 @@ import { Button, Card, Container } from 'react-bootstrap'
 import { Items } from '../Items'
 import {BsCartPlus} from 'react-icons/bs'
 import { toast } from 'react-toastify'
+import 'bootstrap-icons/font/bootstrap-icons.css'
+import Nav from '../Nav'
+import Footer from '../Footer'
 
 const ViewProduct = () => {
   const naviagate=useNavigate()
@@ -32,22 +35,24 @@ const ViewProduct = () => {
   }
 }
   return (
-    <div>
-        <Container>
-   {/* <div className='row justify-content-center'> */}
+    <div style={{backgroundColor:'#C32B2B'}} >
+    <Nav/>
+
+        <Container className='d-flex align-items-center justify-content-center ' >
+   
 
 {products.map(item=>(
-  <div className='d-flex'>
-  <Card key={item.id} style={{ width: '18rem',height:'auto' }}
+  <div className='mt-4'>
+  <Card key={item.id} style={{ width: '35%',height:'auto' }}
     className={`'bg-light-black text-light':'bg-light text-black'} text-center p-0 overflow-hidden shadow mx-auto mb-4`}>
 
-      <Card.Img variant="top" src={item.productImage} style={{height:'300px'}}/>
+      <Card.Img variant="top" src={item.productImage} style={{height:'100%',width:'100%'}}/>
       
     </Card>
 
 
 
-    <Card key={item.id} style={{ width: '40rem',height:'auto' }}
+    <Card key={item.id} style={{ width: '100%',height:'auto' }}
     className={`'bg-light-black text-light':'bg-light text-black'} text-center p-0 overflow-hidden shadow mx-auto mb-4`}>
 
       
@@ -55,7 +60,7 @@ const ViewProduct = () => {
         <Card.Title style={{textOverflow: 'ellipsis', overflow:'hidden', whiteSpace:'nowrap'}}>{item.productName}</Card.Title>
         <Card.Title style={{textOverflow: 'ellipsis', overflow:'hidden', whiteSpace:'nowrap'}}>{item.description}</Card.Title>
         <Card.Title>
-          Rs.<span className='h3'>{item.price}</span>
+        <i class="bi bi-currency-rupee"></i><span className='h4'>{item.price}</span>
         </Card.Title>
         <Button onClick={addToCart} className={`d-flex align-item-center m-auto border-0`}>
         <BsCartPlus size='1.8rem' />
@@ -66,6 +71,7 @@ const ViewProduct = () => {
     ))
 }
     </Container>
+    <Footer/>
     </div>
   )
 }

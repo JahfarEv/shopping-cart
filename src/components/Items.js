@@ -27,12 +27,12 @@ import Product26 from "../components/Category/img/nc10.jpg"
 import Product27 from "../components/Category/img/nc11.jpg"
 import Product28 from "../components/Category/img/nc12.jpg"
 import Product29 from "../components/Category/img/nc13.jpg"
-import Product30 from "../components/Category/img/nc14.jpg"
-import Product31 from "../components/Category/img/nc15.jpg"
-import Product32 from "../components/Category/img/nc16.jpg"
-import Product33 from "../components/Category/img/nc17.jpg"
-import Product34 from "../components/Category/img/nc18.jpg"
-import Product35 from "../components/Category/img/nc19.jpg"
+import Product30 from "../components/Category/img/nc014.jpg"
+import Product31 from "../components/Category/img/nc015.jpg"
+import Product32 from "../components/Category/img/nc016.jpg"
+import Product33 from "../components/Category/img/nc017.jpg"
+import Product34 from "../components/Category/img/nc018.jpg"
+import Product35 from "../components/Category/img/nc019.jpg"
 import Product36 from "../components/Category/img/nc20.jpg"
 import Product37 from "../components/Category/img/nd24.jpg"
 import Product38 from "../components/Category/img/nd23.jpg"
@@ -54,6 +54,8 @@ import Product53 from "../components/Category/img/nd17.jpg"
 import Product54 from "../components/Category/img/nd18.jpg"
 import Product55 from "../components/Category/img/nd18.jpg"
 import Product56 from "../components/Category/img/nd20.jpg"
+import Product57 from "../components/Category/img/nc020.jpg"
+
 
 
 export const Items = [
@@ -80,7 +82,7 @@ export const Items = [
     productName: "Brit",
     price: 1250,
     description:'Pedigree Adult Dry Dog ',
-    category:"Dog",
+    category:"Cat",
     productImage: Product3,
     quandity:1,
   },
@@ -89,7 +91,7 @@ export const Items = [
     productName: "Vetdiet ",
     price: 500,
     description:'Pedigree Adult Dry Dog ',
-    category:"Dog",
+    category:"Cat",
     productImage: Product4,
     quandity:1,
   },
@@ -107,7 +109,7 @@ export const Items = [
     productName: "Pedegree",
     price: 450,
     description:'Pedigree Adult Dry Dog ',
-    category:"Dog",
+    category:"Cat",
     productImage: Product6,
     quandity:1,
   },
@@ -125,7 +127,7 @@ export const Items = [
     productName: "Proplan",
     price: 800,
     description:'Pedigree Adult Dry Dog k',
-    category:"Cat",
+    category:"Dog",
     productImage: Product8,
     quandity:1,
   },
@@ -152,7 +154,7 @@ export const Items = [
     productName: "Dog chow",
     price: 900,
     description:'Pedigree Adult Dry Dog ',
-    category:"Dog",
+    category:"Cat",
     productImage: Product11,
     quandity:1,
   },
@@ -186,7 +188,7 @@ export const Items = [
     productName: "preidet pro",
     price: 335,
     description:'Pedigree Adult Dry Dog ',
-    category:"Cat",
+    category:"Dog",
     productImage: Product15,
   },
   {
@@ -194,7 +196,7 @@ export const Items = [
     productName: "best breed",
     price: 825,
     description:'Pedigree Adult Dry Dog ',
-    category:"Cat",
+    category:"Dog",
     productImage: Product16,
   },
   {
@@ -202,7 +204,7 @@ export const Items = [
     productName: "Wilderness",
     price: 915,
     description:'Pedigree Adult Dry Dog ',
-    category:"Cat",
+    category:"Dog",
     productImage: Product17,
   },
   {
@@ -210,7 +212,7 @@ export const Items = [
     productName: "Wishkash",
     price: 655,
     description:'Pedigree Adult Dry Dog ',
-    category:"Cat",
+    category:"Dog",
     productImage: Product18,
   },
   {
@@ -218,7 +220,7 @@ export const Items = [
     productName: "Brit",
     price: 710,
     description:'Pedigree Adult Dry Dog ',
-    category:"Cat",
+    category:"Dog",
     productImage: Product19,
   },
   {
@@ -226,7 +228,7 @@ export const Items = [
     productName: "Wilderness",
     price: 520,
     description:'Pedigree Adult Dry Dog ',
-    category:"Cat",
+    category:"Dog",
     productImage: Product20,
   },
   {
@@ -234,7 +236,7 @@ export const Items = [
     productName: "Wishkash",
     price: 450,
     description:'Pedigree Adult Dry Dog ',
-    category:"Cat",
+    category:"Dog",
     productImage: Product21,
   },
   {
@@ -530,5 +532,14 @@ export const Items = [
     category:"Dog",
     productImage: Product56,
   },
+  {
+    id: 57,
+    productName: "Wishkash",
+    price: 885,
+    description:'Pedigree Adult Dry Dog ',
+    category:"Cat",
+    productImage: Product57,
+  },
+ 
  
 ];

@@ -28,16 +28,19 @@ export const shopContext= createContext();
 
 function App() {
   const[cart, setCart]= useState([])
- const [product]=useState(Items);
+ const [product,setProduct]=useState(Items);
   const[user,setUser]= useState([]);
   const[login,setLogin]= useState(false)
+  const[productList,setProductList]=useState()
+  const[buy,setBuy]=useState([])
+  const[newProduct,setNewProduct]=useState()
 
 
   return (
     <div className="App">
-    <shopContext.Provider value={{user, setUser,setLogin,login,product,cart,setCart}}>
+    <shopContext.Provider value={{user, setUser,setLogin,login,product,cart,setCart,productList,setProductList,setProduct,buy,setBuy,newProduct,setNewProduct}}>
       <BrowserRouter>
-        {/* <Nav /> */}
+       
         <Routes>
         <Route path="/" element ={<Home />}/>
           <Route path="/signin" element={<Login />} />
@@ -49,11 +52,12 @@ function App() {
           <Route path="/cart" element={<Cart />}/>
           <Route path="/view/:id" element={<ViewProduct />}/>
           <Route path="/sidebar" element ={<Sidebar/>}/>
-          <Route path="/addProduct" element={<AddProduct/>}/>
+          <Route path="/add" element={<AddProduct/>}/>
           <Route path="/adminLogin" element={<AdminLogin/>}/>
           <Route path="/dashbord" element={<Dashbord/>}/>
           <Route path="/productList" element={<ProductList/>}/>
           <Route path="/users" element={<Users/>}/>
+         
         </Routes>
       </BrowserRouter>
       </shopContext.Provider>
