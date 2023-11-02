@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-
 import { Table } from 'react-bootstrap'
 import { shopContext } from '../../App'
 import Sidebar from '../Sidebar'

@@ -1,4 +1,3 @@
-import Product1 from "./Category/img/n1.jpg";
 import Product2 from "../components/Category/img/n1.jpg";
 import Product3 from "../components/Category/img/n2.jpg";
 import Product4 from "../components/Category/img/n3.jpg";

@@ -13,7 +13,7 @@ import Brand from '../components/Category/img/Color logo - no background.png'
 const Sidebar = () => {
     const navigate=useNavigate()
   return (
-    <div style={{ display: 'flex', height: '100vh', overflow: 'scroll initial'}}>
+    <div style={{ display: 'flex', height: '300vh', overflow: 'scroll initial', position:'sticky'}}>
       <CDBSidebar textColor="#fff" backgroundColor="#333">
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
           <a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
