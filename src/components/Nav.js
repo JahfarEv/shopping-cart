@@ -16,7 +16,8 @@ import { useContext } from "react";
 import { shopContext } from "../App";
 
 function NavScroll() {
-  const{login,SetLogin}=useContext(shopContext)
+  const{login,user}=useContext(shopContext)
+  
   const navigate = useNavigate();
   return (
     <Navbar expand="lg" className="bg-dark hvr">
@@ -65,6 +66,8 @@ function NavScroll() {
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
+         
+        
             <Nav.Link onClick={() => navigate("/cart")} title="cart">
               <FaShoppingCart color="#F3DA99" fontSize="25px" />
             </Nav.Link>

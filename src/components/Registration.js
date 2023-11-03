@@ -6,6 +6,8 @@ import { shopContext } from "../App";
 import {  useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import Footer from './Footer'
+import { MDBFooter, MDBContainer } from 'mdb-react-ui-kit';
+import Brand from './Category/img/Color logo - no background.png'
 
 function Registration() {
   const navigate = useNavigate();
@@ -37,12 +39,14 @@ function Registration() {
   };
 
   return (
-    <Container
-      style={{ marginTop: "80px", alignItems: "center", width: "50%" }}
+    <div>
+    <Container fluid
+     style={{backgroundColor:'black'}}
     >
+     <h1 className='d-flex align-items-center justify-content-center font-weight-bold'><img src={Brand} style={{width:'200px'}}/></h1>
       <div className="d-flex align-items-center justify-content-center">
-        <span class="border border-gray ">
-          <form className="align-items-center mt-5 p-3">
+      <span class="border border-gray m-3 " style={{borderRadius:'10px'}}>
+          <form className="align-items-center mt-5 p-3 mb-5" style={{color:'white'}}>
             <h2>Sign Up</h2>
             <div class="form-group" style={{ marginBottom: "20px" }}>
               <label for="exampleInputEmail1">Username</label>
@@ -97,10 +101,22 @@ function Registration() {
               Submit
             </button>
           </form>
-        </span>
+          </span>
        
       </div>
+      
     </Container>
+    <MDBFooter className='text-center text-white mt-2' style={{ backgroundColor: 'gray' }}>
+      <MDBContainer className='p-4'></MDBContainer>
+
+      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+        © 2020 Copyright:
+        <a className='text-white' href='https://mdbootstrap.com/'>
+          PetFoods
+        </a>
+      </div>
+    </MDBFooter>
+    </div>
   );
 }
 

@@ -19,7 +19,7 @@ const All = () => {
     if (searchItem == "") {
       return val;
     } else if (
-      val.productName.toLowerCase().includes(searchItem.toLowerCase())
+      val.product_Name.toLowerCase().includes(searchItem.toLowerCase())
     ) {
       return val;
     }
@@ -37,7 +37,7 @@ const All = () => {
       >
         <div className="searchInput_Container">
           <input
-            style={{ width: "350px" }}
+            style={{ width: "250px" }}
             id="searchInput"
             type="text"
             placeholder="Search here..."
@@ -64,7 +64,7 @@ const All = () => {
                     whiteSpace: "nowrap",
                   }}
                 >
-                  {item.productName}
+                  {item.product_Name}
                 </Card.Title>
                 <Card.Img
                   variant="top"

@@ -57,7 +57,7 @@ import Product57 from "../components/Category/img/nc020.jpg"
 
 
 
-export const Items = [
+export let Items = [
   {
     id: 1,
     productName: "Wilderness",

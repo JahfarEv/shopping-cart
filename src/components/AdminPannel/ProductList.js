@@ -38,7 +38,7 @@ const ProductList = () => {
                   <Button
                     style={{ backgroundColor: "black", border: "none" }}
                     className="m-2"
-                    onClick={() => navigate('/edit')}
+                    onClick={() => navigate(`/edit/${item.id}`)}
                   >
                     Edit
                   </Button>

@@ -6,6 +6,8 @@ import Container from "react-bootstrap/esm/Container";
 import { shopContext } from "../../App";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import { MDBFooter, MDBContainer } from 'mdb-react-ui-kit';
+import Brand from '../Category/img/Color logo - no background.png'
 
 const AdminLogin = () => {
   const naviagate = useNavigate();
@@ -28,12 +30,13 @@ const AdminLogin = () => {
 
   return (
     <div>
-      <Container style={{ width: "50%", marginTop: "80px" }}>
+      <Container fluid style={{backgroundColor:'black'}}>
+       <h1 className='d-flex align-items-center justify-content-center font-weight-bold'><img src={Brand} style={{width:'200px'}}/></h1>
         <div className="d-flex align-items-center justify-content-center">
-          <span class="border border-gray ">
-            <h1>Login</h1>
+          <span class="border border-gray " style={{marginBottom:'5px',borderRadius:'10px'}}>
+            <h1 style={{marginTop:'20px',color:'white'}}>Login</h1>
 
-            <Form className="align-items-center mt-5 p-3">
+            <Form className="align-items-center mt-5 p-3" style={{color:'white'}}>
               <Form.Group
                 className="mb-3"
                 controlId="formBasicEmail"
@@ -45,7 +48,7 @@ const AdminLogin = () => {
                   placeholder="Enter user name"
                   ref={adminName}
                 />
-                <Form.Text className="text-muted">
+                <Form.Text className="text-light">
                   We'll never share your email with anyone else.
                 </Form.Text>
               </Form.Group>
@@ -72,6 +75,16 @@ const AdminLogin = () => {
           </span>
         </div>
       </Container>
+      <MDBFooter className='text-center text-white mt-2' style={{ backgroundColor: 'gray' }}>
+      <MDBContainer className='p-4'></MDBContainer>
+
+      <div className='text-center p-3' style={{ backgroundColor: 'rgba(0, 0, 0, 0.2)' }}>
+        © 2020 Copyright:
+        <a className='text-white' href='https://mdbootstrap.com/'>
+          PetFoods
+        </a>
+      </div>
+    </MDBFooter>
     </div>
   );
 };

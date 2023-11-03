@@ -45,7 +45,7 @@ const Dog = () => {
                     whiteSpace: "nowrap",
                   }}
                 >
-                  {item.productName}
+                  {item.product_Name}
                 </Card.Title>
                 <Card.Img
                   variant="top"

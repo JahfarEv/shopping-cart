@@ -36,7 +36,7 @@ const Sidebar = () => {
               <CDBSidebarMenuItem icon="plus">Add</CDBSidebarMenuItem>
             </NavLink>
 
-            <NavLink exact to="/" target="_blank" activeClassName="activeClicked" onClick={()=>navigate('/')}>
+            <NavLink exact to="/"  activeClassName="activeClicked" onClick={()=>navigate('/')}>
               <CDBSidebarMenuItem icon="home">Home</CDBSidebarMenuItem>
             </NavLink>
           </CDBSidebarMenu>

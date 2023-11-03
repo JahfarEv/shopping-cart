@@ -31,7 +31,8 @@ function App() {
   const[login,setLogin]= useState(false)
   const[productList,setProductList]=useState()
   const[buy,setBuy]=useState([])
-  const[newProduct,setNewProduct]=useState()
+  // const[newProduct,setNewProduct]=useState()
+
  
 
 
@@ -42,7 +43,7 @@ function App() {
     product,cart,setCart,
     productList,setProductList,
     setProduct,buy,setBuy,
-    newProduct,setNewProduct,
+    // newProduct,setNewProduct,
   }}>
       <BrowserRouter>
        
@@ -60,7 +61,7 @@ function App() {
           <Route path="/adminLogin" element={<AdminLogin/>}/>
           <Route path="/dashbord" element={<Dashbord/>}/>
           <Route path="/productList" element={<ProductList/>}/>
-          <Route path="/edit" element={<Edit/>}/>
+          <Route path="/edit/:id" element={<Edit/>}/>
           <Route path="/users" element={<Users/>}/>
          
         </Routes>
