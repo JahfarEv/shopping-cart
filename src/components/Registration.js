@@ -125,9 +125,9 @@ function Registration() {
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
           © 2020 Copyright:
-          <a className="text-white" href="https://mdbootstrap.com/">
+          <span className="text-white" href="https://mdbootstrap.com/">
             PetFoods
-          </a>
+          </span>
         </div>
       </MDBFooter>
     </div>

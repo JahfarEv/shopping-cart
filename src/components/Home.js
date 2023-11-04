@@ -40,7 +40,7 @@ const Home = () => {
             >
               Cat Special Items
             </h1>
-            <Card.Img variant="top" src={img2} style={{ height: "auto" }} />
+            <Card.Img variant="top" src={img2} style={{ height: "auto",marginBottom:'10px' }} />
           </Card>
           <Card onClick={() => navigate("/dog")} style={{ width: "50%" }}>
             <h1
@@ -53,7 +53,7 @@ const Home = () => {
             >
               Dog Special Items
             </h1>
-            <Card.Img variant="top" src={img3} style={{ height: "auto" }} />
+            <Card.Img variant="top" src={img3} style={{ height: "auto", marginBottom:'10px' }} />
           </Card>
         </div>
         <Footer />

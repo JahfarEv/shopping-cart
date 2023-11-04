@@ -19,7 +19,7 @@ const All = () => {
     if (searchItem === "") {
       return val;
     } else if (
-      val.product_Name.toLowerCase().includes(searchItem.toLowerCase())
+      val.productName.toLowerCase().includes(searchItem.toLowerCase())
     ) {
       return val;
     } else {
