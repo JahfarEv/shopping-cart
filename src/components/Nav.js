@@ -16,8 +16,8 @@ import { useContext } from "react";
 import { shopContext } from "../App";
 
 function NavScroll() {
-  const{login,user}=useContext(shopContext)
-  
+  const { login, user } = useContext(shopContext);
+
   const navigate = useNavigate();
   return (
     <Navbar expand="lg" className="bg-dark hvr">
@@ -46,7 +46,7 @@ function NavScroll() {
             <Nav.Link
               className=" a"
               style={{ color: "#F3DA99" }}
-              onClick={() => navigate("/all")} 
+              onClick={() => navigate("/all")}
             >
               All
             </Nav.Link>
@@ -66,23 +66,34 @@ function NavScroll() {
             </Nav.Link>
           </Nav>
           <Form className="d-flex">
-         
-        
             <Nav.Link onClick={() => navigate("/cart")} title="cart">
               <FaShoppingCart color="#F3DA99" fontSize="25px" />
             </Nav.Link>
             <Dropdown.Menu style={{ minWidth: 370 }}>
               <span style={{ padding: 10 }}>Cart is Empty!</span>
             </Dropdown.Menu>
-            {login?
-            <Nav.Link onClick={() => navigate("/signin")} className="mx-3" title="Logout">
-              <IoMdLogOut color="#F3DA99" fontSize="25px" />
-            </Nav.Link>:
-            <Nav.Link onClick={() => navigate("/signin")} className="mx-3" title="Login">
-              <FiLogIn color="#F3DA99" fontSize="25px" />
-            </Nav.Link>
-          }
-            <Nav.Link onClick={() => navigate("/adminLogin")} className="mx-3" title="admin">
+            {login ? (
+              <Nav.Link
+                onClick={() => navigate("/signin")}
+                className="mx-3"
+                title="Logout"
+              >
+                <IoMdLogOut color="#F3DA99" fontSize="25px" />
+              </Nav.Link>
+            ) : (
+              <Nav.Link
+                onClick={() => navigate("/signin")}
+                className="mx-3"
+                title="Login"
+              >
+                <FiLogIn color="#F3DA99" fontSize="25px" />
+              </Nav.Link>
+            )}
+            <Nav.Link
+              onClick={() => navigate("/adminLogin")}
+              className="mx-3"
+              title="admin"
+            >
               <RiAdminFill color="#F3DA99" fontSize="25px" />
             </Nav.Link>
           </Form>

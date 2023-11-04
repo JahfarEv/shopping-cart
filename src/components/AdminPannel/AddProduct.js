@@ -44,7 +44,7 @@ const AddProduct = () => {
   };
   return (
     <div className="d-flex">
-      <Sidebar/>
+      <Sidebar />
       <div
         style={{ flex: "1", textAlign: "center", backgroundColor: "lightgray" }}
       >
@@ -119,7 +119,6 @@ const AddProduct = () => {
           />
           <br />
           <br />
-          
           <label style={{ fontSize: "20px" }}>Product type</label>
           <br />
           <input

@@ -18,7 +18,7 @@ const ViewProduct = () => {
   const addToCart = () => {
     if (login) {
       const [newData] = products;
-      const duplicate = cart.filter((item) => item.id ===newData.id);
+      const duplicate = cart.filter((item) => item.id === newData.id);
       if (duplicate.length > 0) {
         toast.warning(" Product alredy existed");
       } else {

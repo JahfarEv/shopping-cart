@@ -79,7 +79,7 @@ const Cart = () => {
                 <button
                   onClick={() => buyItem(item.id)}
                   type="button"
-                  className="btn btn-outline-secondary"
+                  className="btn btn-outline-success mt-3 ms-4" 
                 >
                   Buy now
                 </button>

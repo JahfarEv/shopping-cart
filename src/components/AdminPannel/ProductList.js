@@ -14,7 +14,7 @@ const ProductList = () => {
   return (
     <div style={{ display: "flex" }}>
       <Sidebar />
-      <div style={{ flex: "1", textAlign: "center",margin:'auto' }}>
+      <div style={{ flex: "1", textAlign: "center", margin: "auto" }}>
         <Table striped bordered hover size="sm" style={{ margin: "0 auto" }}>
           <thead>
             <tr>
