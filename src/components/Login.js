@@ -8,7 +8,6 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { MDBFooter, MDBContainer } from "mdb-react-ui-kit";
 import Brand from "../components/Category/img/Color logo - no background.png";
-import { hover } from "@testing-library/user-event/dist/hover";
 
 const Login = () => {
   const { user, setLogin } = useContext(shopContext);
@@ -34,7 +33,7 @@ const Login = () => {
     <div>
       <Container fluid style={{ backgroundColor: "black" }}>
         <h1 className="d-flex align-items-center justify-content-center font-weight-bold">
-          <img src={Brand} style={{ width: "200px" }} />
+          <img src={Brand} alt="logo" style={{ width: "200px" }} />
         </h1>
         <div className="d-flex align-items-center justify-content-center">
           <span

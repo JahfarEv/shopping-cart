@@ -20,6 +20,7 @@ const Home = () => {
       <Container fluid>
         <img
           src={img1}
+          alt="bannerhome"
           style={{ width: "100%" }}
           onClick={() => navigate("/all")}
         />

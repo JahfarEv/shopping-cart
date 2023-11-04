@@ -9,7 +9,7 @@ import Home from "./components/Home";
 import ViewProduct from "./components/Category/ViewProduct";
 import { Items } from "./components/Items";
 import Cart from "./components/Category/Cart";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Dashbord from "./components/AdminPannel/Dashbord";
 import AddProduct from "./components/AdminPannel/AddProduct";
@@ -30,7 +30,6 @@ function App() {
   const [productList, setProductList] = useState();
   const [buy, setBuy] = useState([]);
 
-
   return (
     <div className="App">
       <shopContext.Provider
@@ -47,7 +46,6 @@ function App() {
           setProduct,
           buy,
           setBuy,
-          
         }}
       >
         <BrowserRouter>

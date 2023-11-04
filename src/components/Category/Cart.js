@@ -33,7 +33,7 @@ const Cart = () => {
   );
 
   const buyItem = (id) => {
-    const byItem = cart.find((item) => item.id == id);
+    const byItem = cart.find((item) => item.id === id);
     const remove = cart.filter((item) => item.id !== id);
     setBuy([...buy, byItem]);
     setCart(remove);
@@ -79,7 +79,7 @@ const Cart = () => {
                 <button
                   onClick={() => buyItem(item.id)}
                   type="button"
-                  className="btn btn-outline-success mt-3 ms-4" 
+                  className="btn btn-outline-success mt-3 ms-4"
                 >
                   Buy now
                 </button>

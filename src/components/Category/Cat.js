@@ -17,7 +17,7 @@ const Cat = () => {
   return (
     <div style={{ backgroundColor: "#C32B2B" }}>
       <Nav />
-      <img src={img1} style={{ width: "100%" }} />
+      <img src={img1} alt="banner" style={{ width: "100%" }} />
       <Container>
         <h1
           style={{

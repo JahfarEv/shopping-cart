@@ -5,7 +5,6 @@ import { useContext, useRef, useState } from "react";
 import { shopContext } from "../App";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-import Footer from "./Footer";
 import { MDBFooter, MDBContainer } from "mdb-react-ui-kit";
 import Brand from "./Category/img/Color logo - no background.png";
 
@@ -20,9 +19,7 @@ function Registration() {
     errEmail: false,
     errPassword: false,
   });
-  // const handleFocus = () => {
-  //   setFocus(true);
-  // };
+ 
 
   const handleClick = () => {
     const name = nName.current.value;
@@ -42,7 +39,7 @@ function Registration() {
     <div>
       <Container fluid style={{ backgroundColor: "black" }}>
         <h1 className="d-flex align-items-center justify-content-center font-weight-bold">
-          <img src={Brand} style={{ width: "200px" }} />
+          <img src={Brand} style={{ width: "200px" }} alt="logo" />
         </h1>
         <div className="d-flex align-items-center justify-content-center">
           <span

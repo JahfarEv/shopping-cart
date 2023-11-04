@@ -8,8 +8,10 @@ const BuyProduct = () => {
   return (
     <div style={{ display: "flex" }}>
       <Sidebar />
-      <div style={{ flex: "1", textAlign: "center",backgroundColor:'#C32B2B' }}>
-      <h1 style={{color:'#F3DA99'}}>Sales History</h1>
+      <div
+        style={{ flex: "1", textAlign: "center", backgroundColor: "#C32B2B" }}
+      >
+        <h1 style={{ color: "#F3DA99" }}>Sales History</h1>
         <Table striped bordered hover size="sm" style={{ margin: "0 auto" }}>
           <thead>
             <tr>
@@ -24,7 +26,11 @@ const BuyProduct = () => {
                 <td>{item.productName}</td>
                 <td>{item.price}</td>
                 <td>
-                  <img style={{ height: "3rem" }} src={item.productImage} />
+                  <img
+                    style={{ height: "3rem" }}
+                    src={item.productImage}
+                    alt="productimage"
+                  />
                 </td>
               </tr>
             </tbody>

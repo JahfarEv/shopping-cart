@@ -16,12 +16,14 @@ const All = () => {
   const navigate = useNavigate();
   const [searchItem, setSearchItem] = useState("");
   const search = product.filter((val) => {
-    if (searchItem == "") {
+    if (searchItem === "") {
       return val;
     } else if (
       val.product_Name.toLowerCase().includes(searchItem.toLowerCase())
     ) {
       return val;
+    } else {
+      return "";
     }
   });
 
@@ -29,7 +31,7 @@ const All = () => {
     <div style={{ backgroundColor: "#C32B2B" }}>
       <Nav />
 
-      <img src={img1} style={{ width: "100%" }} />
+      <img src={img1} alt="banner" style={{ width: "100%" }} />
 
       <div
         className="templateContainer "

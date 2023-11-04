@@ -28,7 +28,7 @@ const Sidebar = () => {
             className="text-decoration-none"
             style={{ color: "inherit" }}
           >
-            <img src={Brand} style={{ width: "150px", height: "35px" }} />
+            <img src={Brand} alt="brandimg" style={{ width: "150px", height: "35px" }} />
           </a>
         </CDBSidebarHeader>
 

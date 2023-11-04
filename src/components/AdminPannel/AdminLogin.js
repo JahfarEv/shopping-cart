@@ -1,9 +1,8 @@
-import React, { useContext, useRef } from "react";
+import React, { useRef } from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Container from "react-bootstrap/esm/Container";
-import { shopContext } from "../../App";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { MDBFooter, MDBContainer } from "mdb-react-ui-kit";
@@ -32,7 +31,7 @@ const AdminLogin = () => {
     <div>
       <Container fluid style={{ backgroundColor: "black" }}>
         <h1 className="d-flex align-items-center justify-content-center font-weight-bold">
-          <img src={Brand} style={{ width: "200px" }} />
+          <img src={Brand} alt="logo" style={{ width: "200px" }} />
         </h1>
         <div className="d-flex align-items-center justify-content-center">
           <span

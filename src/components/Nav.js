@@ -1,4 +1,3 @@
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
@@ -16,7 +15,7 @@ import { useContext } from "react";
 import { shopContext } from "../App";
 
 function NavScroll() {
-  const { login, user } = useContext(shopContext);
+  const { login } = useContext(shopContext);
 
   const navigate = useNavigate();
   return (
@@ -27,7 +26,7 @@ function NavScroll() {
           onClick={() => navigate("/")}
           style={{ color: "#F3DA99" }}
         >
-          <img src={brand} width="100px" height="30px" />
+          <img src={brand} alt="brandlogo" width="100px" height="30px" />
         </Navbar.Brand>
         <Navbar.Toggle className="bg-white" aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">

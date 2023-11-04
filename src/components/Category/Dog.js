@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import { Items } from "../Items";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -18,7 +17,7 @@ const Dog = () => {
   return (
     <div style={{ backgroundColor: "#C32B2B" }}>
       <Nav />
-      <img src={img1} style={{ width: "100%" }} />
+      <img src={img1} alt="imagedog" style={{ width: "100%" }} />
       <Container>
         <h1
           style={{

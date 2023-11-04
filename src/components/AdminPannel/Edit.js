@@ -25,7 +25,7 @@ const Edit = () => {
       category: categorye,
     };
     const updatedProduct = product.map((item) =>
-      item.id == parseInt(id) ? updates : item
+      item.id === parseInt(id) ? updates : item
     );
     console.log(updatedProduct);
     setProduct(updatedProduct);
@@ -58,7 +58,6 @@ const Edit = () => {
               width: "500px",
               border: "none",
               borderRadius: "3px",
-              border: "1px solid",
               textAlign: "center",
             }}
             type="text"
@@ -77,7 +76,6 @@ const Edit = () => {
               width: "500px",
               border: "none",
               borderRadius: "3px",
-              border: "1px solid",
               textAlign: "center",
             }}
             type="text"
@@ -97,7 +95,6 @@ const Edit = () => {
               width: "500px",
               border: "none",
               borderRadius: "3px",
-              border: "1px solid",
               textAlign: "center",
             }}
             type="text"
@@ -117,7 +114,6 @@ const Edit = () => {
               width: "300px",
               border: "none",
               borderRadius: "3px",
-              border: "1px solid",
               textAlign: "center",
               fontSize: "20px",
             }}

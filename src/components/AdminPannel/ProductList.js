@@ -32,7 +32,11 @@ const ProductList = () => {
                 <td>{item.productName}</td>
                 <td>{item.price}</td>
                 <td>
-                  <img style={{ height: "3rem" }} src={item.productImage} />
+                  <img
+                    style={{ height: "3rem" }}
+                    src={item.productImage}
+                    alt="productlist"
+                  />
                 </td>
                 <td>
                   <Button

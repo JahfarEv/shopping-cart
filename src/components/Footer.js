@@ -3,8 +3,6 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import {
   MDBFooter,
   MDBContainer,
-  MDBIcon,
-  MDBInput,
   MDBCol,
   MDBRow,
   MDBBtn,

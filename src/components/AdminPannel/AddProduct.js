@@ -70,7 +70,6 @@ const AddProduct = () => {
               width: "50%",
               border: "none",
               borderRadius: "3px",
-              border: "1px solid lightgray",
               textAlign: "center",
             }}
             type="text"
@@ -90,7 +89,6 @@ const AddProduct = () => {
               width: "50%",
               border: "none",
               borderRadius: "3px",
-              border: "1px solid lightgray",
               textAlign: "center",
             }}
             type="text"
@@ -109,7 +107,6 @@ const AddProduct = () => {
               width: "50%",
               border: "none",
               borderRadius: "3px",
-              border: "1px solid lightgray",
               textAlign: "center",
             }}
             type="text"
@@ -128,7 +125,6 @@ const AddProduct = () => {
               width: "50%",
               border: "none",
               borderRadius: "3px",
-              border: "1px solid lightgray",
               textAlign: "center",
             }}
             type="text"
