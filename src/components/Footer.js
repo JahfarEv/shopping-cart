@@ -88,10 +88,8 @@ export default function App() {
 
         <section className="mb-4">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
-            distinctio earum repellat quaerat voluptatibus placeat nam, commodi
-            optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-            sequi voluptate quas.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+          
           </p>
         </section>
 

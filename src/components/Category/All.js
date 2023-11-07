@@ -66,7 +66,7 @@ const All = () => {
                     whiteSpace: "nowrap",
                   }}
                 >
-                  {item.product_Name}
+                  {item.productName}
                 </Card.Title>
                 <Card.Img
                   variant="top"

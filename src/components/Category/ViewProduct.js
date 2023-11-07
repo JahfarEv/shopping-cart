@@ -51,7 +51,7 @@ const ViewProduct = () => {
 
             <Card
               key={item.id}
-              style={{ width: "100%", height: "auto" }}
+              style={{ width: "36%", height: "auto" }}
               className={`'bg-light-black text-light':'bg-light text-black'} text-center p-0 overflow-hidden shadow mx-auto mb-4`}
             >
               <Card.Body>
@@ -60,6 +60,7 @@ const ViewProduct = () => {
                     textOverflow: "ellipsis",
                     overflow: "hidden",
                     whiteSpace: "nowrap",
+                    fontWeight:'bold'
                   }}
                 >
                   {item.productName}
@@ -69,6 +70,7 @@ const ViewProduct = () => {
                     textOverflow: "ellipsis",
                     overflow: "hidden",
                     whiteSpace: "nowrap",
+                    
                   }}
                 >
                   {item.description}

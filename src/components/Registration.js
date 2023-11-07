@@ -25,21 +25,27 @@ function Registration() {
     const name = nName.current.value;
     const pass = nPass.current.value;
     const email = nEmail.current.value;
+   
+    
     const value = { newName: name, newPass: pass, newEmail: email };
     setUser([...user, value]);
     console.log(value);
     if (!name || !pass) {
-      toast.warning("pls fill your field");
+      toast.warning("pls fill out this field");
+    }else if(user.find((usr)=>usr.newName===name)){
+      toast.warning("User name allready exists..")
+    
     } else {
       navigate("/signin");
     }
-  };
+  }
+;
 
   return (
     <div>
       <Container fluid style={{ backgroundColor: "black" }}>
         <h1 className="d-flex align-items-center justify-content-center font-weight-bold">
-          <img src={Brand} style={{ width: "200px" }} alt="logo" />
+          <img src={Brand} style={{ width: "200px" }} alt="logo" onClick={()=>navigate('/')}/>
         </h1>
         <div className="d-flex align-items-center justify-content-center">
           <span
@@ -66,7 +72,7 @@ function Registration() {
                   required
                 />
                 <span className="spn">
-                  Username should have 3-10 characters
+                  Username should have 3-10 characters..
                 </span>
               </div>
               <div class="form-group" style={{ marginBottom: "20px" }}>
@@ -85,6 +91,7 @@ function Registration() {
                 />
                 <span className="spn">Enter a valid Email Id</span>
               </div>
+              <span>We'll never share your email with anyone else.</span>
               <div class="form-group" style={{ marginBottom: "20px" }}>
                 <label for="exampleInputPassword1">Password</label>
                 <input
@@ -99,17 +106,19 @@ function Registration() {
                   required
                 />
                 <span className="spn">
-                  Password must have a minimum 6 characters.
+                  Password must have a minimum 6 characters and include atleast 1 uppercase 1 digit and 1 special characters
                 </span>
               </div>
 
               <button
                 type="submit"
                 class="btn btn-primary"
+                
                 onClick={handleClick}
               >
                 Submit
               </button>
+
             </form>
           </span>
         </div>

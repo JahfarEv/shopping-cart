@@ -19,14 +19,14 @@ function NavScroll() {
 
   const navigate = useNavigate();
   return (
-    <Navbar expand="lg" className="bg-dark hvr">
+    <Navbar expand="lg" className="bg-dark hvr" >
       <Container fluid>
         <Navbar.Brand
           className="a"
           onClick={() => navigate("/")}
           style={{ color: "#F3DA99" }}
         >
-          <img src={brand} alt="brandlogo" width="100px" height="30px" />
+          <img src={brand} alt="brandlogo" width="100px" height="30px" style={{cursor:'pointer'}} />
         </Navbar.Brand>
         <Navbar.Toggle className="bg-white" aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">

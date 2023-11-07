@@ -30,10 +30,10 @@ const Login = () => {
     }
   };
   return (
-    <div>
+    <>
       <Container fluid style={{ backgroundColor: "black" }}>
         <h1 className="d-flex align-items-center justify-content-center font-weight-bold">
-          <img src={Brand} alt="logo" style={{ width: "200px" }} />
+          <img src={Brand} alt="logo" style={{ width: "200px" }} onClick={()=>navigate('/')} />
         </h1>
         <div className="d-flex align-items-center justify-content-center">
           <span
@@ -110,7 +110,7 @@ const Login = () => {
           </span>
         </div>
       </MDBFooter>
-    </div>
+    </>
   );
 };
 

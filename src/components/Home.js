@@ -21,8 +21,8 @@ const Home = () => {
         <img
           src={img1}
           alt="bannerhome"
-          style={{ width: "100%" }}
-          onClick={() => navigate("/all")}
+          style={{ width: "100%",cursor:'pointer' }}
+          onClick={() => navigate("/all")} 
         />
 
         <div className="d-flex">
@@ -36,11 +36,12 @@ const Home = () => {
                 backgroundColor: "#AA1616",
                 color: "#F3DA99",
                 fontWeight: "bold",
+                cursor:'pointer'
               }}
             >
               Cat Special Items
             </h1>
-            <Card.Img variant="top" src={img2} style={{ height: "auto",marginBottom:'10px' }} />
+            <Card.Img variant="top" src={img2} style={{ height: "auto",marginBottom:'10px',cursor:'pointer' }} />
           </Card>
           <Card onClick={() => navigate("/dog")} style={{ width: "50%" }}>
             <h1
@@ -49,11 +50,12 @@ const Home = () => {
                 backgroundColor: "#AA1616",
                 color: "#F3DA99",
                 fontWeight: "bold",
+                cursor:'pointer'
               }}
             >
               Dog Special Items
             </h1>
-            <Card.Img variant="top" src={img3} style={{ height: "auto", marginBottom:'10px' }} />
+            <Card.Img variant="top" src={img3} style={{ height: "auto", marginBottom:'10px',cursor:'pointer' }} />
           </Card>
         </div>
         <Footer />

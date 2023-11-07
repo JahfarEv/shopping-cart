@@ -16,9 +16,9 @@ const Sidebar = () => {
     <div
       style={{
         display: "flex",
-        height: "300vh",
+        height: "580vh",
         overflow: "scroll initial",
-        position: "sticky",
+        
       }}
     >
       <CDBSidebar textColor="#fff" backgroundColor="#333">
