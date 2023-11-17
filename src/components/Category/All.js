@@ -7,7 +7,7 @@ import Container from "react-bootstrap/esm/Container";
 import { useNavigate } from "react-router-dom";
 import { shopContext } from "../../App";
 import Nav from "../Nav";
-import img1 from "../slider/banner.webp";
+import img1 from "../slider/nw3.gif";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import Footer from "../Footer";
 
@@ -28,11 +28,11 @@ const All = () => {
   });
 
   return (
-    <div style={{ backgroundColor: "#C32B2B" }}>
+    <div style={{ backgroundColor: "#b21fdb" }}>
       <Nav />
 
       <img src={img1} alt="banner" style={{ width: "100%" }} />
-
+      <div style={{border:"none solid black", width:'100%',height:'20px',backgroundColor:'white'}}></div>
       <div
         className="templateContainer "
         style={{ display: "flex", justifyContent: "center", margin: "10px" }}

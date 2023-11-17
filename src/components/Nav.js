@@ -19,7 +19,7 @@ function NavScroll() {
 
   const navigate = useNavigate();
   return (
-    <Navbar expand="lg" className="bg-dark hvr" >
+    <Navbar expand="lg" className="bg-light hvr" >
       <Container fluid>
         <Navbar.Brand
           className="a"
@@ -37,28 +37,28 @@ function NavScroll() {
           >
             <Nav.Link
               className=" a"
-              style={{ color: "#F3DA99" }}
+              style={{ color: "black" }}
               onClick={() => navigate("/")}
             >
               Home
             </Nav.Link>
             <Nav.Link
               className=" a"
-              style={{ color: "#F3DA99" }}
+              style={{ color: "black" }}
               onClick={() => navigate("/all")}
             >
               All
             </Nav.Link>
             <Nav.Link
               className="a"
-              style={{ color: "#F3DA99" }}
+              style={{ color: "black" }}
               onClick={() => navigate("/dog")}
             >
               Dog
             </Nav.Link>
             <Nav.Link
               className="a"
-              style={{ color: "#F3DA99" }}
+              style={{ color: "black" }}
               onClick={() => navigate("/cat")}
             >
               Cat
@@ -66,7 +66,7 @@ function NavScroll() {
           </Nav>
           <Form className="d-flex">
             <Nav.Link onClick={() => navigate("/cart")} title="cart">
-              <FaShoppingCart color="#F3DA99" fontSize="25px" />
+              <FaShoppingCart color="black" fontSize="25px" />
             </Nav.Link>
             <Dropdown.Menu style={{ minWidth: 370 }}>
               <span style={{ padding: 10 }}>Cart is Empty!</span>
@@ -77,7 +77,7 @@ function NavScroll() {
                 className="mx-3"
                 title="Logout"
               >
-                <IoMdLogOut color="#F3DA99" fontSize="25px" />
+                <IoMdLogOut color="black" fontSize="25px" />
               </Nav.Link>
             ) : (
               <Nav.Link
@@ -85,7 +85,7 @@ function NavScroll() {
                 className="mx-3"
                 title="Login"
               >
-                <FiLogIn color="#F3DA99" fontSize="25px" />
+                <FiLogIn color="black" fontSize="25px" />
               </Nav.Link>
             )}
             <Nav.Link
@@ -93,7 +93,7 @@ function NavScroll() {
               className="mx-3"
               title="admin"
             >
-              <RiAdminFill color="#F3DA99" fontSize="25px" />
+              <RiAdminFill color="black" fontSize="25px" />
             </Nav.Link>
           </Form>
         </Navbar.Collapse>

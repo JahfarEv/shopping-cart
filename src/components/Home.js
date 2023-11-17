@@ -6,8 +6,8 @@ import { useNavigate } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "react-awesome-slider/dist/styles.css";
 import img1 from "../components/slider/banner.webp";
-import img2 from "../components/slider/catt.jpeg";
-import img3 from "../components/slider/dogg new.jpg";
+import img2 from "../components/slider/puppy (1).png";
+import img3 from "../components/slider/puppy (2).png";
 import Footer from "./Footer";
 import Nav from "./Nav";
 
@@ -25,37 +25,17 @@ const Home = () => {
           onClick={() => navigate("/all")} 
         />
 
-        <div className="d-flex">
+        <div className="d-flex justify-content-center">
           <Card
             onClick={() => navigate("/cat")}
-            style={{ width: "50%", marginRight: "10px" }}
+            style={{marginRight: "10px", border:'none'}}
           >
-            <h1
-              style={{
-                textAlign: "center",
-                backgroundColor: "#AA1616",
-                color: "#F3DA99",
-                fontWeight: "bold",
-                cursor:'pointer'
-              }}
-            >
-              Cat Special Items
-            </h1>
-            <Card.Img variant="top" src={img2} style={{ height: "auto",marginBottom:'10px',cursor:'pointer' }} />
+            
+            <Card.Img variant="top" src={img2} style={{ height: "auto",marginBottom:'10px',padding:'10px', cursor:'pointer' }} />
           </Card>
-          <Card onClick={() => navigate("/dog")} style={{ width: "50%" }}>
-            <h1
-              style={{
-                textAlign: "center",
-                backgroundColor: "#AA1616",
-                color: "#F3DA99",
-                fontWeight: "bold",
-                cursor:'pointer'
-              }}
-            >
-              Dog Special Items
-            </h1>
-            <Card.Img variant="top" src={img3} style={{ height: "auto", marginBottom:'10px',cursor:'pointer' }} />
+          <Card onClick={() => navigate("/dog")} style={{border:'none'}}>
+           
+            <Card.Img variant="top" src={img3} style={{ height: "auto", marginBottom:'10px',padding:"10px", cursor:'pointer' }} />
           </Card>
         </div>
         <Footer />

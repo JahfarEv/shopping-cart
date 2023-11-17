@@ -7,7 +7,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import { useNavigate } from "react-router-dom";
 import { shopContext } from "../../App";
 import Nav from "../Nav";
-import img1 from "../slider/banner.webp";
+import img1 from "../slider/nw1.jpg";
 import Footer from "../Footer";
 
 const Cat = () => {
@@ -15,24 +15,17 @@ const Cat = () => {
   const navigate = useNavigate();
   const pet = product.filter((dg) => dg.category === "Cat");
   return (
-    <div style={{ backgroundColor: "#C32B2B" }}>
+    <div style={{ backgroundColor: "#b21fdb" }}>
       <Nav />
       <img src={img1} alt="banner" style={{ width: "100%" }} />
+      <div style={{border:"none solid black", width:'100%',height:'20px',backgroundColor:'white'}}></div>
       <Container>
-        <h1
-          style={{
-            textAlign: "center",
-            backgroundColor: "white",
-            color: "#F3DA99",
-            fontWeight: "bold",
-          }}
-        >
-          Cat Special Items
-        </h1>
+       
         <div className="row justify-content-center">
+        
           {pet.map((item) => (
             <Card
-              style={{ width: "18rem", height: "auto" }}
+              style={{ width: "18rem", height: "auto",marginTop:'10px' }}
               key={item.id}
               className={`'bg-light-black text-light':'bg-light text-black'} text-center p-0 overflow-hidden shadow mx-auto mb-4`}
             >
