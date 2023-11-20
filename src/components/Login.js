@@ -31,7 +31,7 @@ const Login = () => {
   };
   return (
     <>
-      <Container fluid style={{ backgroundColor: "black" }}>
+      <Container fluid style={{ backgroundColor: "#3c0747" }}>
         <h1 className="d-flex align-items-center justify-content-center font-weight-bold">
           <img src={Brand} alt="logo" style={{ width: "200px" }} onClick={()=>navigate('/')} />
         </h1>
@@ -96,7 +96,7 @@ const Login = () => {
 
       <MDBFooter
         className="text-center text-white mt-2"
-        style={{ backgroundColor: "gray" }}
+        style={{ backgroundColor: "#3c0747" }}
       >
         <MDBContainer className="p-4"></MDBContainer>
 

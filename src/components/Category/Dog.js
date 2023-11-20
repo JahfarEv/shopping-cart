@@ -15,8 +15,9 @@ const Dog = () => {
   const navigate = useNavigate();
   const pet = product.filter((dg) => dg.category === "Dog");
   return (
-    <div style={{ backgroundColor: "#b21fdb" }}>
+    <div style={{ backgroundColor: "#3c0747" }}>
       <Nav />
+      <div style={{border:"none solid black", width:'100%',height:'20px',backgroundColor:'white'}}></div>
       <img src={img1} alt="imagedog" style={{ width: "100%" }} />
       <div style={{border:"none solid black", width:'100%',height:'20px',backgroundColor:'white'}}></div>
       <Container>
@@ -58,6 +59,7 @@ const Dog = () => {
           ))}
         </div>
       </Container>
+      <div style={{border:"none solid black", width:'100%',height:'20px',backgroundColor:'white'}}></div>
       <Footer />
     </div>
   );

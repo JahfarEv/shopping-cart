@@ -28,8 +28,9 @@ const All = () => {
   });
 
   return (
-    <div style={{ backgroundColor: "#b21fdb" }}>
+    <div style={{ backgroundColor: "#3c0747" }}>
       <Nav />
+      <div style={{border:"none solid black", width:'100%',height:'20px',backgroundColor:'white'}}></div>
 
       <img src={img1} alt="banner" style={{ width: "100%" }} />
       <div style={{border:"none solid black", width:'100%',height:'20px',backgroundColor:'white'}}></div>
@@ -88,7 +89,7 @@ const All = () => {
           ))}
         </div>
       </Container>
-
+      <div style={{border:"none solid black", width:'100%',height:'20px',backgroundColor:'white'}}></div>
       <Footer />
     </div>
   );

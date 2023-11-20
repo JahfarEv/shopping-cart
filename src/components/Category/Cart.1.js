@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { shopContext } from "../../App";
 import Nav from "../Nav";
-import Footer from '../Footer'
+import Footer from '../Footer';
 
-const Cart = () => {
+export const Cart = () => {
   const { cart, setCart, buy, setBuy } = useContext(shopContext);
   const cartIncrement = (item) => {
     const updateCart = cart.map((cartItem) => {
@@ -41,20 +41,19 @@ const Cart = () => {
   };
 
   return (
-    <div style={{ backgroundColor: "#3c0747" }}>
+    <div style={{ backgroundColor: "#b21fdb" }}>
       <Nav />
-      <div style={{border:"none solid black", width:'100%',height:'20px',backgroundColor:'white'}}></div>
-      <div className="continer" style={{color:'white'}}>
+      <div className="continer">
         <h1 className="mt-4">Your Cart</h1>
         <ul className="list-group">
           {cart.map((item, index) => (
             <li
               key={index}
-              className="list-group-item d-flex justify-content-between align-items-center" style={{backgroundColor:""}}
+              className="list-group-item d-flex justify-content-between align-items-center"
             >
               <div>
                 <h5>{item.productName}</h5>
-                <p> <i class="bi bi-currency-rupee"></i>{item.price}</p>
+                <p>{item.price}</p>
                 <div className="input-group">
                   <button
                     onClick={() => cartDegrement(item)}
@@ -77,45 +76,31 @@ const Cart = () => {
                   >
                     Remove
                   </button>
-                  <button
+                </div>
+                <button
                   onClick={() => buyItem(item.id)}
                   type="button"
                   className="btn btn-outline-success mt-3 ms-4"
                 >
                   Buy now
                 </button>
-                </div>
-             
               </div>
               <div>
                 <img
                   src={item.productImage}
                   alt={item.productName}
-                  style={{ width: "100px" }}
-                />
+                  style={{ width: "100px" }} />
                 <p>Quandity :{item.quandity}</p>
-                <p>Total : <i class="bi bi-currency-rupee"></i>{item.price * item.quandity}</p>
+                <p>Total :{item.price * item.quandity}</p>
               </div>
             </li>
           ))}
         </ul>
-        <div className="d-flex justify-content-between align-items-center" >
-        
-    
         <p className="mt-3" style={{ fontSize: "25px", fontWeight: 600 }}>
-         Your Total Amount :
+          Total Amount:{totalAmount}
         </p>
-        <p className="mt-3" style={{ fontSize: "25px", fontWeight: 600 }}>
-         <i class="bi bi-currency-rupee"></i>{totalAmount}
-        </p>
-        </div>
       </div>
-      <div style={{border:"none solid black", width:'100%',height:'20px',backgroundColor:'white'}}></div>
-
       <Footer />
-      
     </div>
   );
 };
-
-export default Cart;

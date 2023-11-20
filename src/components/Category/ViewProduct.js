@@ -31,9 +31,9 @@ const ViewProduct = () => {
     }
   };
   return (
-    <div style={{ backgroundColor: "#C32B2B" }}>
+    <div style={{ backgroundColor: "#3c0747" }}>
       <Nav />
-
+      <div style={{border:"none solid black", width:'100%',height:'20px',backgroundColor:'white'}}></div>
       <Container className="d-flex align-items-center justify-content-center ">
         {products.map((item) => (
           <div className="mt-4">
@@ -91,6 +91,7 @@ const ViewProduct = () => {
           </div>
         ))}
       </Container>
+      <div style={{border:"none solid black", width:'100%',height:'20px',backgroundColor:'white'}}></div>
       <Footer />
     </div>
   );

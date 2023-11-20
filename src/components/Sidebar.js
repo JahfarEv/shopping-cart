@@ -21,7 +21,7 @@ const Sidebar = () => {
         
       }}
     >
-      <CDBSidebar textColor="#fff" backgroundColor="#333">
+      <CDBSidebar textColor="#fff" backgroundColor="black">
         <CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
           <a
             href="/"

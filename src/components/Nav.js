@@ -1,5 +1,4 @@
 import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,7 +9,7 @@ import { FiLogIn } from "react-icons/fi";
 import { IoMdLogOut } from "react-icons/io";
 import { RiAdminFill } from "react-icons/ri";
 import "../components/Nav.css";
-import brand from "./Category/img/Color logo - no background.png";
+import brand from "./Category/img/White logo - no background.png";
 import { useContext } from "react";
 import { shopContext } from "../App";
 
@@ -19,7 +18,7 @@ function NavScroll() {
 
   const navigate = useNavigate();
   return (
-    <Navbar expand="lg" className="bg-light hvr" >
+    <Navbar expand="lg" className=" hvr" >
       <Container fluid>
         <Navbar.Brand
           className="a"
@@ -37,36 +36,36 @@ function NavScroll() {
           >
             <Nav.Link
               className=" a"
-              style={{ color: "black" }}
+              style={{ color: "white" }}
               onClick={() => navigate("/")}
             >
               Home
             </Nav.Link>
             <Nav.Link
               className=" a"
-              style={{ color: "black" }}
+              style={{ color: "white" }}
               onClick={() => navigate("/all")}
             >
               All
             </Nav.Link>
             <Nav.Link
               className="a"
-              style={{ color: "black" }}
+              style={{ color: "white" }}
               onClick={() => navigate("/dog")}
             >
               Dog
             </Nav.Link>
             <Nav.Link
               className="a"
-              style={{ color: "black" }}
+              style={{ color: "white" }}
               onClick={() => navigate("/cat")}
             >
               Cat
             </Nav.Link>
           </Nav>
-          <Form className="d-flex">
+          <Nav className="d-flex">
             <Nav.Link onClick={() => navigate("/cart")} title="cart">
-              <FaShoppingCart color="black" fontSize="25px" />
+              <FaShoppingCart color="white" fontSize="25px" />
             </Nav.Link>
             <Dropdown.Menu style={{ minWidth: 370 }}>
               <span style={{ padding: 10 }}>Cart is Empty!</span>
@@ -77,25 +76,25 @@ function NavScroll() {
                 className="mx-3"
                 title="Logout"
               >
-                <IoMdLogOut color="black" fontSize="25px" />
+                <IoMdLogOut color="white" fontSize="25px" />
               </Nav.Link>
             ) : (
               <Nav.Link
                 onClick={() => navigate("/signin")}
-                className="mx-3"
+                className="mx-0"
                 title="Login"
               >
-                <FiLogIn color="black" fontSize="25px" />
+                <FiLogIn color="white" fontSize="25px" />
               </Nav.Link>
             )}
             <Nav.Link
               onClick={() => navigate("/adminLogin")}
-              className="mx-3"
+              className="mx-0"
               title="admin"
             >
-              <RiAdminFill color="black" fontSize="25px" />
+              <RiAdminFill color="white" fontSize="25px" />
             </Nav.Link>
-          </Form>
+          </Nav>
         </Navbar.Collapse>
       </Container>
     </Navbar>

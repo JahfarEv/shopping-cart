@@ -9,7 +9,7 @@ const BuyProduct = () => {
     <div style={{ display: "flex" }}>
       <Sidebar />
       <div
-        style={{ flex: "1", textAlign: "center", backgroundColor: "#C32B2B" }}
+        style={{ flex: "1", textAlign: "center", backgroundColor: "#3c0747" }}
       >
         <h1 style={{ color: "#F3DA99" }}>Sales History</h1>
         <Table striped bordered hover size="sm" style={{ margin: "0 auto" }}>

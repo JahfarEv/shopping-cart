@@ -29,7 +29,7 @@ const AdminLogin = () => {
 
   return (
     <div>
-      <Container fluid style={{ backgroundColor: "black" }}>
+      <Container fluid style={{ backgroundColor: "#3c0747" }}>
         <h1 className="d-flex align-items-center justify-content-center font-weight-bold">
           <img src={Brand} alt="logo" style={{ width: "200px" }} />
         </h1>
@@ -38,10 +38,10 @@ const AdminLogin = () => {
             class="border border-gray "
             style={{ marginBottom: "5px", borderRadius: "10px" }}
           >
-            <h1 style={{ marginTop: "20px", color: "white" }}>Login</h1>
+            <h1 style={{ marginTop: "20px", color: "white",textAlign:'center' }}>Admin Login</h1>
 
             <Form
-              className="align-items-center mt-5 p-3"
+              className="align-items-center mt-2 p-3"
               style={{ color: "white" }}
             >
               <Form.Group
@@ -84,7 +84,7 @@ const AdminLogin = () => {
       </Container>
       <MDBFooter
         className="text-center text-white mt-2"
-        style={{ backgroundColor: "gray" }}
+        style={{ backgroundColor: "#3c0747" }}
       >
         <MDBContainer className="p-4"></MDBContainer>
 
