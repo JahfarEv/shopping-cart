@@ -55,7 +55,7 @@ const All = () => {
         <div className="row justify-content-center">
           {search.map((item) => (
             <Card
-              style={{ width: "18rem", height: "auto" }}
+              style={{ width: "15rem", height: "auto" }}
               key={item.id}
               className={`'bg-light-black text-light':'bg-light text-black'} text-center p-0 overflow-hidden shadow mx-auto mb-4`}
             >

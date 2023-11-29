@@ -48,6 +48,7 @@ function NavScroll() {
             >
               All
             </Nav.Link>
+            
             <Nav.Link
               className="a"
               style={{ color: "white" }}

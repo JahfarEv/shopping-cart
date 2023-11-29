@@ -30,14 +30,14 @@ const Home = () => {
         <div className="d-flex justify-content-center">
           <Card
             onClick={() => navigate("/dog")}
-            style={{marginRight: "10px", border:'none',marginTop:'25px',marginBottom:'25px',backgroundColor:'#3c0747',width:'50%'}}
+            style={{marginRight: "10px", border:'none',marginTop:'25px',backgroundColor:'#3c0747',width:'50%',height:"80%"}}
           >
             
-            <Card.Img variant="top" src={img2} style={{ height: "auto",padding:'10px', cursor:'pointer' }} />
+            <Card.Img variant="top" src={img2} style={{ height: "80%", cursor:'pointer' }} />
           </Card>
-          <Card onClick={() => navigate("/cat")} style={{border:'none',marginTop:'25px',marginBottom:'25px',backgroundColor:'#3c0747',width:'50%'}}>
+          <Card onClick={() => navigate("/cat")} style={{border:'none',marginTop:'25px',backgroundColor:'#3c0747',width:'50%',height:'80%'}}>
            
-            <Card.Img variant="top" src={img3} style={{ height: "auto",padding:"10px", cursor:'pointer' }} />
+            <Card.Img variant="top" src={img3} style={{ height: "80%", cursor:'pointer' }} />
           </Card>
         </div>
         

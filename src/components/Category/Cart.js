@@ -80,7 +80,7 @@ const Cart = () => {
                   <button
                   onClick={() => buyItem(item.id)}
                   type="button"
-                  className="btn btn-outline-success mt-3 ms-4"
+                  className="btn btn-outline-success "
                 >
                   Buy now
                 </button>

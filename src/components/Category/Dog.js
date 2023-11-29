@@ -25,7 +25,7 @@ const Dog = () => {
         <div className="row justify-content-center">
           {pet.map((item) => (
             <Card
-              style={{ width: "18rem", height: "auto",marginTop:'10px' }}
+              style={{ width: "15rem", height: "auto",marginTop:'10px' }}
               key={item.id}
               className={`'bg-light-black text-light':'bg-light text-black'} text-center p-0 overflow-hidden shadow mx-auto mb-4`}
             >

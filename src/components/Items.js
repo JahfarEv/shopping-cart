@@ -60,7 +60,7 @@ export let Items = [
     id: 1,
     productName: "Wilderness",
     price: 300,
-    description: "Pedigree Adult Dry Dog Food ",
+    description: `Pedigree Adult Dry Dog Food`,
     category: "Dog",
     productImage: Product31,
     quandity: 1,
